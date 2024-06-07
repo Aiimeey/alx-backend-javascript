@@ -32,10 +32,11 @@ To complete the tasks in this specialization, ensure you have the following:
     An editor such as Visual Studio Code or any other allowed editors (vi, vim, emacs).
     Knowledge of how to execute JavaScript files using NodeJS.
     Familiarity with using npm for managing dependencies.
-    ensure you have the necessary Babel packages installed: npm install --save-dev @babel/core @babel/node @babel/preset-env
-    sudo npm install -g @babel/cli
-
-
+    Run npm install to ensure that all the dependencies specified in your package.json file are installed.
+    Once the dependencies are installed, you can run the linting and testing scripts defined in your package.json.
+    To lint your JavaScript files, run npm run check-lint.
+    To run your tests, run npm test.
+    To run linting and tests together, run npm run full-test.
 
 Tasks
 
