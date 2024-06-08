@@ -13,6 +13,7 @@ export function taskNext() {
 
   return combination;
 }
+// CommonJS modules
 // module.exports = {
 //   taskFirst,
 //   getLast,
