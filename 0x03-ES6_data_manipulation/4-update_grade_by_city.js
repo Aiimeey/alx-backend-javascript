@@ -8,7 +8,8 @@ export default function updateStudentGradeByCity(getListStudents, city, newGrade
     ).map(
       (obj) => ({
         ...obj,
-        grade: (newGrades.find((grade) => grade.studentId === obj.id,
+        grade: (newGrades.find(
+          (grade) => grade.studentId === obj.id,
         ) || { grade: 'N/A' }).grade,
         // grade: (newGrades.filter((grade) => grade.studentId === obj.id,
         // ).pop() || { grade: 'N/A' }).grade,
