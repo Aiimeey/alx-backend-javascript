@@ -7,22 +7,41 @@ export interface Student {
   
   
   const studentA: Student = {
-    firstName: "aaa",
-    lastName: "aaaa",
-    age: 22,
-    location: "South Korea",
+    firstName: 'Alice',
+    lastName: 'Smith',
+    age: 20,
+    location: 'New York',
   };
   const studentB: Student = {
-    firstName: "cccc",
-    lastName: "ccccc",
+    firstName: 'Bob',
+    lastName: 'Johnson',
     age: 22,
-    location: "Lodz, Poland",
+    location: 'Los Angeles',
   };
   
+// const studentsList: Student[] = [studentA, studentB];
+
   const studentsList: Array<Student> = [
     studentA,
     studentB,
   ];
+
+  
+// const table = document.createElement('table');
+// const tbody = document.createElement('tbody');
+
+// studentsList.forEach(student => {
+//   const row = tbody.insertRow();
+//   const cell1 = row.insertCell();
+//   const cell2 = row.insertCell();
+//   cell1.textContent = student.firstName;
+//   cell2.textContent = student.location;
+//   tbody.appendChild(row);
+// });
+
+// table.appendChild(tbody);
+// document.body.appendChild(table);
+
   const styleSheet = `
     html {
       margin: 0;
@@ -56,7 +75,6 @@ export interface Student {
     }
   `;
   
-  
   export const displayStudents = (students: Array<Student>): void => {
     const table = document.createElement('table');
     const tableHead = document.createElement('thead');
@@ -83,4 +101,3 @@ export interface Student {
   styleSheetElement.innerHTML = styleSheet;
   document.head.insertAdjacentElement('beforeend', styleSheetElement);
   document.title = 'Task 0';
-  

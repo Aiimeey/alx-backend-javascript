@@ -2,7 +2,10 @@ namespace Subjects {
     export interface Teacher {
       experienceTeachingReact?: number;
     }
-  
+    // export class React extends Subject {
+    //   constructor(teacher: Teacher) {
+    //     super(teacher);
+    //   }
     export class React extends Subjects.Subject {
       getRequirements(): string {
         return 'Here is the list of requirements for React';

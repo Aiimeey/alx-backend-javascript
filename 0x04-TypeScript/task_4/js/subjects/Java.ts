@@ -2,7 +2,10 @@ namespace Subjects {
     export interface Teacher {
       experienceTeachingJava?: number;
     }
-  
+    // export class Java extends Subject {
+    //   constructor(teacher: Teacher) {
+    //     super(teacher);
+    //   }
     export class Java extends Subjects.Subject {
       getRequirements(): string {
         return 'Here is the list of requirements for Java';
