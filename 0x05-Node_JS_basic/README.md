@@ -71,3 +71,6 @@ File Descriptions
 
     .babelrc
     Babel configuration file for transpiling ES6 code.
+ 
+ to install nodejs : https://github.com/nodesource/distributions?tab=readme-ov-file
+ 
