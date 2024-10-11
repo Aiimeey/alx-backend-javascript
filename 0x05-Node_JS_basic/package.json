@@ -1,5 +1,6 @@
 
 {
+  "type": "module",
   "name": "node_js_basics",
   "version": "1.0.0",
   "description": "",
@@ -8,7 +9,9 @@
     "lint": "./node_modules/.bin/eslint",
     "check-lint": "lint [0-9]*.js",
     "test": "./node_modules/mocha/bin/mocha --require babel-register --exit",
-    "dev": "nodemon --exec babel-node --presets babel-preset-env ./server.js ./database.csv"
+    "dev": "nodemon --exec babel-node --presets babel-preset-env ./server.js ./database.csv",
+    "start": "nodemon --exec babel-node"
+
   },
   "author": "",
   "license": "ISC",
