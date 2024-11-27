@@ -9,12 +9,11 @@ export const readDatabase = async (filePath) => {
     const result = {};
 
     lines.forEach((line) => {
-      const [firstname,,,field] = line.split(',');
+      const [firstname,,, field] = line.split(',');
       if (!result[field]) {
         result[field] = [];
       }
       result[field].push(firstname);
-
     });
 
     // const res = []
@@ -25,7 +24,6 @@ export const readDatabase = async (filePath) => {
   } catch (error) {
     throw Error(error.stack.message);
   }
-
 };
 export default readDatabase;
 // module.exports = readDatabase;
