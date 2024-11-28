@@ -1,4 +1,4 @@
-Unit Tests in JavaScript
+### _Unit Tests in JavaScript_
 Overview
 
 This project focuses on mastering unit testing for Node.js applications using Mocha, Chai, and Sinon. The tasks cover a range of testing techniques including basic assertions, spies, stubs, hooks, async testing, and integration testing. The project culminates in setting up a small Express server and performing integration testing to ensure the server's functionality.
